@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FF5B00; /* Cor de fundo escura */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+}
+
+.container {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF; /* Cor de fundo das células */
+    border: 2px solid #FF5B00; /* Cor da borda das células */
+    border-radius: 10px; /* Cantos arredondados */
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #FF5B00; /* Cor do texto (X e O) */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.result {
+    font-size: 1.5rem;
+    font-weight: bold; /* Texto em negrito */
+    color: #FF5B00; /* Cor do texto do resultado */
+    margin-top: 20px;
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 10px; /* Adicionado padding para dar espaço */
+    background-color: #E9E4CF; /* Fundo do resultado */
+    border: 2px solid #E9E4CF; /* Borda do resultado */
+}
